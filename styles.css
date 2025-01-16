@@ -91,6 +91,14 @@ section {
     padding: 4em 2rem;
     margin: 2em auto;
     max-width: 900px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 section h2 {
@@ -103,17 +111,7 @@ section p, section ul {
     font-size: 1.1em;
     line-height: 1.8;
 }
-/* Section Fade-in Animation */
-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
 
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 .skills-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
