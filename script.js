@@ -1,9 +1,30 @@
-// Initialize AOS (Animate On Scroll)
-AOS.init({
-    duration: 1000, // Duration of the animation (in ms)
-    easing: 'ease', // Easing function for the animation
-    once: true, // Animation should only happen once when scrolling to that section
-    offset: 100, // Offset from the top of the screen (i.e., how early the animation should trigger)
+// Intersection Observer to trigger section visibility
+const sections = document.querySelectorAll('section');
+
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const sectionObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+sections.forEach(section => {
+    sectionObserver.observe(section);
 });
 
-// You can add any additional custom functionality below if needed
+// Parallax effect for sections
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.pageYOffset;
+
+    document.querySelectorAll('section').forEach((section, index) => {
+        const speed = index * 0.2; // Adjust the multiplier to control parallax speed
+        section.style.transform = `translateY(${scrollPosition * speed}px)`;
+    });
+});
