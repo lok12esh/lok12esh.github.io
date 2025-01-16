@@ -86,21 +86,14 @@ nav a:hover {
     color: #0073e6;
 }
 
-
 /* Sections */
 section {
     padding: 4em 2rem;
     margin: 2em auto;
     max-width: 900px;
-    transparent: 100;
-    transform: translateY(50px);
     background-color: white; /* Set background color to white */
     color: #333; /* Set text color to dark for better contrast */
     border-radius: 8px; /* Optional: Add rounded corners */
-}
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 section h2 {
