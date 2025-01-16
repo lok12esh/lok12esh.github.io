@@ -3,88 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lokesh B - Salesforce Developer</title>
     <link rel="stylesheet" href="styles.css">
-
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Add any custom icons or links here -->
 </head>
 <body>
-    <header data-aos="fade-down" data-aos-duration="1000">
-         <img src="your-picture.jpg" alt="Lokesh B" class="profile-image">
+    <!-- Navigation bar (optional) -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <img src="your-picture.jpg" alt="Lokesh B" class="profile-image">
         <h1>Lokesh B</h1>
-        <p>Salesforce Developer</p>
-        <p>Chennai | 9094053372 | <a href="mailto:lokibala12@gmail.com">lokibala12@gmail.com</a></p>
+        <p class="tagline">Salesforce Developer</p>
+        <p>Contact me: <a href="mailto:lokibala12@gmail.com">lokibala12@gmail.com</a></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/lokesh-b-1003481b3" target="_blank" class="social-icon">LinkedIn</a>
+            <a href="https://github.com/lok12esh" target="_blank" class="social-icon">GitHub</a>
+        </div>
     </header>
-    
-    <section class="about" data-aos="fade-up" data-aos-duration="1000">
+
+    <!-- About Section -->
+    <section id="about">
         <h2>About Me</h2>
-        <p>I am a skilled Salesforce Developer with extensive experience in designing and implementing custom solutions on the Salesforce platform. Proficient in Apex, Visualforce, and Lightning components, I excel in creating tailored applications to meet business needs. My proficiency in data management, process automation, reports, and dashboards helps streamline operations, improve data accuracy, and empower teams to leverage the full potential of the Salesforce platform. I am dedicated to optimizing Salesforce functionalities to enhance overall business efficiency and deliver exceptional user experiences.</p>
+        <p>Skilled Salesforce Developer with a passion for creating powerful and customized solutions. Experienced in working with Apex, Visualforce, Lightning components, and more. Always looking for new challenges to enhance business processes and empower users.</p>
     </section>
 
-    <section class="skills" data-aos="fade-up" data-aos-duration="1000">
+    <!-- Skills Section -->
+    <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Advanced Salesforce Configuration</li>
-            <li>Apex and Visualforce</li>
-            <li>Data Management and Integration</li>
-            <li>Salesforce Security and Access Management</li>
-            <li>Reports and Dashboards</li>
-            <li>Change Set Management</li>
-            <li>Salesforce Lightning</li>
-        </ul>
-    </section>
-
-    <section class="experience" data-aos="fade-up" data-aos-duration="1000">
-        <h2>Work Experience</h2>
-        <h3>Project Engineer | Wipro Technologies</h3>
-        <p>May 2022 - Present | Chennai, India</p>
-        <ul>
-            <li>Proficient in managing Salesforce objects, fields, and page layouts to meet business requirements.</li>
-            <li>Skilled at creating and customizing workflows, validation rules, and approval processes for process automation.</li>
-            <li>Experience in setting up user profiles, roles, and sharing rules to ensure appropriate data access and security.</li>
-            <li>Proficient in creating and customizing reports and dashboards to provide meaningful insights to stakeholders.</li>
-            <li>Skilled at using report types, report formulas, and report scheduling for timely data analysis.</li>
-            <li>Expert in utilizing Process Builder and Flow to automate complex business processes and reduce manual effort.</li>
-            <li>Analytical mindset to identify pain points and devise innovative solutions that align with business goals.</li>
-            <li>Proven ability to troubleshoot and optimize code for improved performance in Salesforce environments.</li>
-            <li>Strong collaboration and communication skills, demonstrated through successful project implementations and teamwork.</li>
-        </ul>
-    </section>
-
-    <section class="education" data-aos="fade-up" data-aos-duration="1000">
-        <h2>Education</h2>
-        <p><strong>B.Tech: Information Technology</strong> | S.A. Engineering College, Chennai</p>
-        <p>CGPA: 8.12 | 2018-2022</p>
-    </section>
-
-    <section class="certifications" data-aos="fade-up" data-aos-duration="1000">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Salesforce Certified Platform Developer I (Feb 2023 – Present)</li>
-            <li>Salesforce Certified Associate (May 2023 – Present)</li>
-            <li>Salesforce Certified AI Associate (Jan 2023 – Present)</li>
-        </ul>
-    </section>
-
-    <section class="languages" data-aos="fade-up" data-aos-duration="1000">
-        <h2>Languages</h2>
-        <ul>
-            <li>English: Advanced (C1)</li>
-            <li>Tamil: Bilingual or Proficient (C2)</li>
-        </ul>
-    </section>
-
-    <footer data-aos="fade-up" data-aos-duration="1000">
-        <p>Visit my <a href="https://github.com/lok12esh">GitHub</a> for more projects and contributions.</p>
-        <p>Contact me: <a href="mailto:lokibala12@gmail.com">lokibala12@gmail.com</a> | Phone: 9094053372</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/lokesh-b-1003481b3">https://www.linkedin.com/in/lokesh-b-1003481b3</a></p>
-    </footer>
-
-    <!-- AOS JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
-</html>
+        <div class="skills-list">
+            <div class="skill">Salesforce Configuration</div>
+            <div class="skill">Apex Programming</div>
+            <div class="skill">Lightning Web Components
