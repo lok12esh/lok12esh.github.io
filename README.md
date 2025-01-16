@@ -28,3 +28,4 @@ You can reach me through the following platforms:
 - **Phone**: 9094053372
 - **LinkedIn**: [https://www.linkedin.com/in/lokesh-b-1003481b3](https://www.linkedin.com/in/lokesh-b-1003481b3)
 - **GitHub**: [https://github.com/lok12esh](https://github.com/lok12esh)
+- **Trailhead**: [https://www.salesforce.com/trailblazer/lok12esh](https://www.salesforce.com/trailblazer/lok12esh)
