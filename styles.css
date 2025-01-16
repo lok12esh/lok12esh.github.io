@@ -86,11 +86,19 @@ nav a:hover {
     color: #0073e6;
 }
 
-/* Sections */
+/* Section styles */
 section {
-    padding: 4em 2rem;
-    margin: 2em auto;
+    padding: 8em 2rem;
+    margin: 0 auto;
     max-width: 900px;
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    opacity: 0; /* Hidden until it comes into view */
+    transform: translateY(20px); /* Initial transform */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
 }
 
 section h2 {
