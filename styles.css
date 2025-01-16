@@ -11,7 +11,15 @@ header {
     background-color: #0073e6;
     color: white;
     text-align: center;
-    padding: 1.5em 0;
+    padding: 2em 0;
+}
+
+header img.profile-image {
+    border-radius: 50%;  /* Makes the image circular */
+    width: 150px;        /* Set the width */
+    height: 150px;       /* Set the height */
+    object-fit: cover;   /* Ensures image covers the area without distortion */
+    margin-bottom: 1em;   /* Space between the image and text */
 }
 
 header h1 {
@@ -25,7 +33,7 @@ header p {
 }
 
 header a {
-    color: white; /* Ensuring all links in the header are white */
+    color: white !important;
 }
 
 a {
@@ -69,15 +77,14 @@ footer {
     padding: 1em;
 }
 
-/* Specifically target the phone number in the footer to ensure it's visible */
 footer p {
-    color: white; /* Ensure the text in the footer remains white */
+    color: white !important;
 }
 
 footer a {
-    color: white; /* Ensure links in the footer are white */
+    color: white !important;
 }
 
 footer a:hover {
-    color: #0073e6; /* Add hover effect for footer links */
+    color: #0073e6;
 }
