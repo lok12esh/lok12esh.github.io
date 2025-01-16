@@ -45,7 +45,7 @@ nav a:hover {
 .header {
     text-align: center;
     padding: 4em 0;
-    0
+    background-color: #000;
 }
 
 .profile-image {
@@ -91,10 +91,8 @@ section {
     padding: 4em 2rem;
     margin: 2em auto;
     max-width: 900px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    background-color: #000;
+    background-color: white; /* Set background color to white */
+    color: #333; /* Set text color to dark for better contrast */
     border-radius: 8px; /* Optional: Add rounded corners */
 }
 
